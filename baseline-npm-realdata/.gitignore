@@ -1,0 +1,8 @@
+target/
+.idea/
+.DS_store
+src-gen/
+py-gen/
+activemq-data/
+tests-old/activemq-data/
+tests-old/experiment/

@@ -1,0 +1,48 @@
+<?nsuri org.crossflow?>
+<?render-graphviz-neato ../org.crossflow.tests/models/graphviz.egl?>
+<_>
+
+<workflow name="HistoryTechrankWorkflow">
+
+		<source name="RepositorySource" out="Repositories"/>
+		<queue name="Repositories" type="Repository"/>
+		<task name="RepositorySearcher" in="Repositories" out="RepositorySearchResults"/>
+		<queue name="RepositorySearchResults" type="RepositorySearchResult"/>
+		<task name="RepositoryAnalysisDispatcher" in="RepositorySearchResults" out="AnalysisJobs" master="true"/>
+		<queue name="AnalysisJobs" type="CommitAnalysis"/>
+		<task name="CommitAnalyser" in="AnalysisJobs" out="CommitAnalysisResults"/>
+		<queue name="CommitAnalysisResults" type="CommitAnalysisResult"/>
+		<sink name="ResultsSink" in="CommitAnalysisResults"/>
+
+
+        <type name="Repository">
+			<datafield name="path" isForHash="true"/>
+			<datafield name="size" type="long"/>
+		</type>
+        <type name="RepositorySearchResult">
+            <datafield name="repository" type="Repository"/>
+            <datafield name="commitHash" type="String" many="true"/>
+            <datafield name="fileCount" type="int" many="true"/>
+            <datafield name="lineCount" type="int" many="true"/>
+            <datafield name="repoSizeKB" type="int" many="true"/>
+        </type>
+
+        <type name="CommitAnalysis">
+            <datafield name="repository" type="Repository"/>
+            <datafield name="commitHash" type="String"/>
+            <datafield name="fileCount" type="int"/>
+            <datafield name="lineCount" type="int"/>
+            <datafield name="commitNumber" type="int"/>
+            <datafield name="repoSizeKB" type="int"/>
+        </type>
+        <type name="CommitAnalysisResult">
+            <datafield name="repositoryName" type="String"/>
+            <datafield name="commitHash" type="String"/>
+            <datafield name="warningCount" type="int"/>
+            <datafield name="commitNumber" type="int"/>
+        </type>
+
+<language name="Java" package="org.crossflow.tests.techrankHistoric" genOutputFolder="src-gen" outputFolder="src"/>
+</workflow>
+
+</_>

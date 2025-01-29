@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Worker1",
+    "netSpeedBps": 33554432,
+    "ioSpeedBps": 67108864
+  },
+  {
+    "name": "Worker2",
+    "netSpeedBps": 33554432,
+    "ioSpeedBps": 67108864
+  },
+  {
+    "name": "Worker3",
+    "netSpeedBps": 33554432,
+    "ioSpeedBps": 67108864
+  },
+  {
+    "name": "Worker4",
+    "netSpeedBps": 33554432,
+    "ioSpeedBps": 67108864
+  },
+  {
+    "name": "Worker5",
+    "netSpeedBps": 33554432,
+    "ioSpeedBps": 67108864
+  }
+]
