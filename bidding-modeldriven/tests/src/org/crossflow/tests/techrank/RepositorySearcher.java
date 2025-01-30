@@ -5,7 +5,7 @@ import org.crossflow.runtime.utils.EstimationMetrics;
 
 import java.time.LocalDateTime;
 
-public class RepositorySearcher extends CommitmentRepositorySearcherBase {
+public class RepositorySearcher extends RepositorySearcherBase {
 
     private CrossflowMetricsBuilder currentMetricBuilder;
 
