@@ -39,6 +39,8 @@ export GITHUB_USERNAME=<your_github_user>
 # Set the directory to download the repositories to
 export STORAGE_DIR=<path_to_storage_directory>
 
+#Select the correction factor in bidding-cf/workflow/start_worker.sh
+
 # Run the workflow
 source start_master.sh && source start_worker.sh
 ```
