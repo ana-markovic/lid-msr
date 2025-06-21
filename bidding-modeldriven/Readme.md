@@ -11,9 +11,9 @@ This project implements the LID MSR workflow seeking the co-occurences of differ
 📎 *Reference: `add_link_when_published`*
 
 ## ✅ Prerequisites
-Java (JDK 11+)
-Docker
-Maven
+- Java (JDK 11+)
+- Docker
+- Maven
 
 ## 🚀 How to Run
 ### 1. Setup the ActiveMQ and Redis
