@@ -1,13 +1,21 @@
-# Techrank Bidding CF LinReg
+# Techrank - Bidding and Self-Correcting Workers
+This project implements the historic source code analysis MSR workflow described in **Section 7.3.1** of the thesis using the Crossflow platform extended with a **Bidding Scheduler and self-correcting workers**. Each worker maintains its own linear estimator of job execution time and updates it dynamically based on observed job outcomes using online linear regression.
 
-## Description
+## 📘 Related Thesis Sections
 
-## Requirements
+- **Section 7.3.1** – MSR workflow definition for feedback-based estimator
+- **Section 7.3.2** – Experimental setup, job creation and worker parameters
+- **Section 7.3.3** – Result analysis and impact of online model refinement
+
+📎 *Reference: `add_link_when_published`*
+
+## ✅ Prerequisites
 - Java 17
 - Maven
 - Docker
 
-## Build executables
+## 🚀 How to Run
+### 1. Build executables
 Make sure you have your `JAVA_HOME` environment variable set to your JDK 17 installation directory.
 
 ```bash
@@ -18,9 +26,7 @@ cd bidding-cf-linreg
 ./build.sh
 ```
 
-
-
-## Run the executables
+### 2. Run the executables
 You will need your GitHub token and username to run the workflow.
 Follow these instructions to get the token:
 [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
@@ -44,3 +50,5 @@ export STORAGE_DIR=<path_to_storage_directory>
 # Run the workflow
 source start_master.sh && source start_worker.sh
 ```
+### 3. Output
+After execution, metric files will be written directly to the **workflow directory**.
