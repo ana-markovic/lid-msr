@@ -1,13 +1,21 @@
-# Techrank NPM Real Data
+# Techrank NPM Real Data - Crossflow Baseline
+This project implements a real-world version of the MSR workflow, focusing on the co-occurrence of popular NPM libraries within GitHub repositories. It uses the Crossflow framework in its baseline configuration and is prepared to be run on AWS or similar cluster (can be used locally too)
+.
+## 📘 Related Thesis Sections
 
-## Description
+- **Section 6.4.1** – MSR workflow description for identifying which NPM libraries often appear together
+- **Section 6.4.3** – Performance and output analysis
+  
+📎 *Reference: `add_link_when_published`*
 
-## Requirements
+## ✅ Prerequisites
 - Java 17
 - Maven
 - Docker
 
-## Build executables
+
+## 🚀 How to Run
+### 1. Build executables
 Make sure you have your `JAVA_HOME` environment variable set to your JDK 17 installation directory.
 
 ```bash
@@ -18,9 +26,7 @@ cd techrank-npm-real-data
 ./build.sh
 ```
 
-
-
-## Run the executables
+### 2. Run the executables
 You will need your GitHub token and username to run the workflow.
 Follow these instructions to get the token:
 [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
