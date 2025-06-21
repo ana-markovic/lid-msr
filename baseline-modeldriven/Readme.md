@@ -16,18 +16,22 @@ This experiment implements the LID MSR workflow introduced in **Section 4.1 of t
 - Maven
 
 ## 🚀 How to Run
-### 1. Compile the Crossflow Project and Setup the ActiveMQ
+### 1.Setup the ActiveMQ
 
 ```bash
 cd baseline-modeldriven
 mvn clean
 mvn compile
+```
+
+### 2. Compile the Crossflow Project
 
 # ActiveMQ required to run the workflow
+```
 docker run -p 61616:61616 --name=activemq -p 8161:8161 -p 1099:1099 -d antonw/activemq-jmx
 ```
 
-### 2. Run Experiments via Tests
+### 3. Run Experiments via Tests
 Experiments are located in:
 ```org.crossflow.tests.techrank.TechrankMetricsTests```
 
@@ -40,5 +44,5 @@ TechrankMetricsTests.testConfOneSlow_allDiff100_10_10();
 TechrankMetricsTests.testConfFastSlow_allDiff40_40_40();
 ...
 ```
-### 3. Output
+### 4. Output
 After execution, metric files will be written directly to the **root project directory**.
