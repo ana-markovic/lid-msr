@@ -48,3 +48,5 @@ export STORAGE_DIR=<path_to_storage_directory>
 # Run the workflow
 source start_master.sh && source start_worker.sh
 ```
+### 3. Output
+After execution, metric files will be written directly to the **workflow directory**.
