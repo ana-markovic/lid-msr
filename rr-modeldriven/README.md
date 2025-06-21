@@ -7,6 +7,8 @@ This project implements the MSR workflow seeking the co-occurences of different 
 - **Section 4.3** – Experimental setup and input preparation
 - **Section 5.2** – Evaluation results for Resource-Registry-enabled execution
 
+📎 *Reference: `add_link_when_published`*
+
 ## ✅ Prerequisites
 
 - Java (JDK 11+)
