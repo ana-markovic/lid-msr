@@ -15,7 +15,7 @@ This experiment implements the LID MSR workflow introduced in **Section 4.1 of t
 - Java (JDK 8+)
 - Gradle
 
-## How to run
+## 🚀 How to Run
 ```bash
 # Set Spark home path
 SPARK_HOME=~/Downloads/spark-3.5.4-bin-hadoop3 
