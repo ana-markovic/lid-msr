@@ -1,0 +1,11 @@
+-------------
+Broker Host: localhost
+Storage Dir: /Users/nemanja/Desktop/clones
+Worker Name: worker_slow_3
+IO Speed: 146
+Net Speed: 30000
+-------------
+Checking for library express in /Users/nemanja/Desktop/clones/worker_slow_3/4f32b4cf-e7b4-313b-b650-e22b7e99fc82
+Found express in /Users/nemanja/Desktop/clones/worker_slow_3/4f32b4cf-e7b4-313b-b650-e22b7e99fc82: true
+Checking for library express in /Users/nemanja/Desktop/clones/worker_slow_3/c1f7a0cf-1bd2-31d5-9ba7-c4dec7d84558
+Found express in /Users/nemanja/Desktop/clones/worker_slow_3/c1f7a0cf-1bd2-31d5-9ba7-c4dec7d84558: false

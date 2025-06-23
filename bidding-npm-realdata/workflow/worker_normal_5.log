@@ -1,0 +1,11 @@
+-------------
+Broker Host: localhost
+Storage Dir: /Users/nemanja/Desktop/clones
+Worker Name: worker_normal_5
+IO Speed: 74
+Net Speed: 30000
+-------------
+Checking for library async in /Users/nemanja/Desktop/clones/worker_normal_5/4f32b4cf-e7b4-313b-b650-e22b7e99fc82
+Found async in /Users/nemanja/Desktop/clones/worker_normal_5/4f32b4cf-e7b4-313b-b650-e22b7e99fc82: false
+Checking for library async in /Users/nemanja/Desktop/clones/worker_normal_5/c1f7a0cf-1bd2-31d5-9ba7-c4dec7d84558
+Found async in /Users/nemanja/Desktop/clones/worker_normal_5/c1f7a0cf-1bd2-31d5-9ba7-c4dec7d84558: false

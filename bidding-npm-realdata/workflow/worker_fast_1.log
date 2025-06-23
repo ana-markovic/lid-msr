@@ -1,0 +1,15 @@
+-------------
+Broker Host: localhost
+Storage Dir: /Users/nemanja/Desktop/clones
+Worker Name: worker_fast_1
+IO Speed: 131
+Net Speed: 30000
+-------------
+Checking for library express in /Users/nemanja/Desktop/clones/worker_fast_1/b38d2ea0-3323-3419-b619-00e3fa9c12d6
+Found express in /Users/nemanja/Desktop/clones/worker_fast_1/b38d2ea0-3323-3419-b619-00e3fa9c12d6: false
+Checking for library async in /Users/nemanja/Desktop/clones/worker_fast_1/b38d2ea0-3323-3419-b619-00e3fa9c12d6
+Found async in /Users/nemanja/Desktop/clones/worker_fast_1/b38d2ea0-3323-3419-b619-00e3fa9c12d6: false
+Checking for library express in /Users/nemanja/Desktop/clones/worker_fast_1/3693080c-afad-331d-812c-742265d67b3f
+Found express in /Users/nemanja/Desktop/clones/worker_fast_1/3693080c-afad-331d-812c-742265d67b3f: true
+Checking for library async in /Users/nemanja/Desktop/clones/worker_fast_1/3693080c-afad-331d-812c-742265d67b3f
+Found async in /Users/nemanja/Desktop/clones/worker_fast_1/3693080c-afad-331d-812c-742265d67b3f: false
