@@ -23,6 +23,7 @@ Each subdirectory corresponds to one or more experiments described in the thesis
 | `rr-modeldriven/`           | Crossflow with the Resource-Registry Scheduler                                      | 4.1, 4.3, 5.2                          |
 | `bidding-modeldriven/`      | Crossflow with the Bidding Scheduler                                                | 4.1, 4.3, 6.3                          |
 | `baseline-npm-realdata/`    | Real-world MSR workflow on GitHub/NPM data (Crossflow baseline)                     | 6.4.1, 6.4.2                           |
+| `bidding-npm-realdata/`     | Real-world MSR workflow on GitHub/NPM data (Crossflow with the Bidding Scheduler)   | 6.4.1, 6.4.2                           |
 | `bidding-cf/`               | Historic repository analysis with the Bidding Scheduler and self-correcting workers | 7.3.1, 7.3.2, 7.3.3                    |
 
 ---
