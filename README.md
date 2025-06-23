@@ -7,7 +7,7 @@ Author: Ana Markovic
 Institution: University of York  
 Thesis Document: `add_link_when_published`
 
-The work investigates job scheduling strategies for mining software repositories (MSR) at scale, with a focus on locality-intensive workflows, decentralised scheduling, and adaptive estimation.
+The work investigates job scheduling strategies for mining software repositories (MSR) at scale, with a focus on locality-intensive workflows and decentralised scheduling in environments where workers may possess varying physical characteristics.
 
 ---
 
