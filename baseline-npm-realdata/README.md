@@ -34,7 +34,7 @@ Follow these instructions to get the token:
 ```bash
 # Move to the workflow directory 
 # (omit the root directory if you are already there)
-cd /workflow
+cd workflow
 
 # ActiveMQ required to run the workflow
 docker run -p 61616:61616 --name=activemq -p 8161:8161 -p 1099:1099 -d antonw/activemq-jmx
