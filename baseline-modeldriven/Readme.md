@@ -11,24 +11,20 @@ This experiment implements the LID MSR workflow introduced in **Section 4.1 of t
 
 ## ✅ Prerequisites
 
-- Java (JDK 11+)
+- Java (JDK 17)
 - Docker
 - Maven
 
 ## 🚀 How to Run
 ### 1.Setup the ActiveMQ
-
-```bash
-cd baseline-modeldriven
-mvn clean
-mvn compile
+```
+docker run -p 61616:61616 --name=activemq -p 8161:8161 -p 1099:1099 -d antonw/activemq-jmx
 ```
 
 ### 2. Compile the Crossflow Project
-
-# ActiveMQ required to run the workflow
-```
-docker run -p 61616:61616 --name=activemq -p 8161:8161 -p 1099:1099 -d antonw/activemq-jmx
+```bash
+cd baseline-modeldriven
+mvn clean compile
 ```
 
 ### 3. Run Experiments via Tests
